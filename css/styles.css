@@ -1,0 +1,16 @@
+#show-task{
+  display: none;
+}
+
+.display {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.display:hover {
+  text-decoration: underline;
+}
+
+h1{
+  text-align: center;
+}

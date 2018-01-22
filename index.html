@@ -6,10 +6,47 @@
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>To Do List</title>
   </head>
-  
   <body>
-
+    <div class="container">
+      <h1>To Do List</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add Task: </h2>
+          <form id="new-task">
+            <div class="form-group">
+              <label for="task">Task: </label>
+              <input type="text" class="form-control" id="task">
+            </div>
+            <div class="form-group">
+              <label for="description">Description: </label>
+              <input type="text" class="form-control" id="description">
+            </div>
+            <div class="form-group">
+              <label for="startDate">Start Date: </label>
+              <input type="text" class="form-control" id="startDate">
+            </div>
+            <div class="form-group">
+              <label for="endDate">End Date: </label>
+              <input type="text" class="form-control" id="endDate">
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+          <div class="col-md-6">
+            <div id="show-task">
+              <h2>Task: </h2>
+              <p>Task: <span class="task"></span></p>
+              <p>Description: <span class="description"></span></p>
+              <p>Start Date: <span class="startDate"></span></p>
+              <p>End Date: <span class="endDate"></span></p>
+              <button type="submit" class="btn btn-primary">Delete</button>
+            </div>
+          </div>
+          <ul id="tasks">
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
